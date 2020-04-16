@@ -8,7 +8,7 @@ import * as users from '../users.json';
   styleUrls: ['./question3.component.css']
 })
 export class Question3Component implements OnInit {
-
+  errorMsg: string = '';
   userarray: any = (users as any).default;
   constructor(public route: Router) { }
   
@@ -30,6 +30,6 @@ export class Question3Component implements OnInit {
         }
       }
     }
-    return false;
+    this.errorMsg = 'User not found';
   }
 }

@@ -2,4 +2,5 @@
     <span>Username</span><input type="text" placeholder="Enter your username" #username/>
     <span>Password</span><input type="password" placeholder="Enter your password" #pwd/>
     <button (click)='login(username,pwd)'>Login</button>
+    <h4 style="color: red;">{{errorMsg}}</h4>
 </div>
